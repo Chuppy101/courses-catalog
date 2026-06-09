@@ -2,6 +2,8 @@
 
 Adaptive course catalog based on the Figma test task.
 
+<img width="1242" height="1226" alt="image" src="https://github.com/user-attachments/assets/d41a0053-7315-421e-80e0-b8535da4cea7" />
+
 ## Stack
 
 - HTML
