@@ -1,0 +1,18 @@
+{
+  "name": "figma-courses-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pixel-friendly responsive courses catalog: HTML, vanilla JavaScript, SCSS and BEM.",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve .",
+    "build": "npm run sass",
+    "preview": "serve .",
+    "sass": "sass src/scss/main.scss styles/main.css",
+    "sass:watch": "sass --watch src/scss/main.scss:styles/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1",
+    "serve": "^14.2.6"
+  }
+}

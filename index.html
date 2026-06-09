@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online courses catalog with live search and category filters." />
+    <title>Online Courses</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script defer src="src/js/main.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="courses" aria-labelledby="courses-title">
+        <div class="courses__decor courses__decor--left" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="courses__decor courses__decor--steps" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="courses__inner">
+          <header class="courses__header">
+            <p class="courses__eyebrow">Enjoy your studying!</p>
+            <h1 class="courses__title" id="courses-title">Our online courses</h1>
+          </header>
+
+          <div class="courses__toolbar" aria-label="Course filters and search">
+            <nav class="courses__filters" id="categoryFilters" aria-label="Course categories"></nav>
+
+            <label class="courses__search">
+              <span class="visually-hidden">Search course</span>
+              <input class="courses__search-field" id="courseSearch" type="search" placeholder="Search course..." autocomplete="off" />
+              <svg class="courses__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M8.25 13.5a5.25 5.25 0 1 0 0-10.5 5.25 5.25 0 0 0 0 10.5ZM12 12l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </label>
+          </div>
+
+          <div class="courses__grid" id="coursesGrid" aria-live="polite"></div>
+
+          <p class="courses__empty" id="emptyMessage" hidden>No courses found</p>
+
+          <button class="courses__load" id="loadMore" type="button">
+            <svg class="courses__load-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M18.1 9.36A7.25 7.25 0 0 0 4.03 7.2M3.9 3.85v3.78h3.78M3.9 12.64A7.25 7.25 0 0 0 17.97 14.8m.13 3.35v-3.78h-3.78" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Load more</span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
